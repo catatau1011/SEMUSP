@@ -20,6 +20,27 @@
         android:theme="@style/Theme.SEMUSP"
         tools:targetApi="31">
         <activity
+            android:name=".Escolha.FaunaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha.FloraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha.AguaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha.FogoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha.ArActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha.RuidoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha.SoloActivity"
+            android:exported="false" />
+        <activity
             android:name=".Telas.Denuncia"
             android:exported="false" />
         <activity

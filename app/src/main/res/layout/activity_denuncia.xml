@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btFauna"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/backgroun_button_verde"
@@ -69,36 +69,36 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btFlora" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btFlora"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/backgroun_button_verde"
         android:text="Flora"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btFauna"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toBottomOf="@+id/btAgua" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btAgua"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/backgroun_button_verde"
         android:text="Água"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btFlora"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
+        app:layout_constraintTop_toBottomOf="@+id/btFogo" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btSolo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
@@ -106,49 +106,49 @@
         android:background="@drawable/backgroun_button_verde"
         android:text="Solo"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button15"
+        app:layout_constraintBottom_toTopOf="@+id/btRuido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/btAr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/backgroun_button_verde"
         android:text="Ar"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintBottom_toTopOf="@+id/btFogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/btRuido" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/btRuido"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/backgroun_button_verde"
         android:text="Ruído"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button14"
+        app:layout_constraintBottom_toTopOf="@+id/btAr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
+        app:layout_constraintTop_toBottomOf="@+id/btSolo" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btFogo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/backgroun_button_verde"
         android:text="Fogo"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintBottom_toTopOf="@+id/btAgua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintTop_toBottomOf="@+id/btAr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

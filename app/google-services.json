@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "654407922823",
+    "firebase_url": "https://semusp-4f5d3-default-rtdb.firebaseio.com",
+    "project_id": "semusp-4f5d3",
+    "storage_bucket": "semusp-4f5d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654407922823:android:7d9c3b096e3f538cf7b422",
+        "android_client_info": {
+          "package_name": "com.example.semusp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654407922823-cc79jq7hsc2kuo8688fuigpk73eeu9sc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.semusp",
+            "certificate_hash": "b0c3480df5812680acfa803b6bbd2e42b77b8bec"
+          }
+        },
+        {
+          "client_id": "654407922823-37m2fir267vn1bukainjnso5td31s5vt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_XZxIfFly4GuJaLyaVCZK0gQyTCHcOKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654407922823-37m2fir267vn1bukainjnso5td31s5vt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".termodeuso">
+
+    <ImageView
+        android:id="@+id/fundoPorTras5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="-50dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundo2" />
+
+    <ImageView
+        android:id="@+id/fundodafrente5"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundo" />
+
+    <ImageView
+        android:id="@+id/elipse5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/editNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elipse" />
+
+    <ImageView
+        android:id="@+id/tartaruga5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/elipse5"
+        app:layout_constraintEnd_toEndOf="@+id/elipse5"
+        app:layout_constraintStart_toStartOf="@+id/elipse5"
+        app:layout_constraintTop_toTopOf="@+id/elipse5"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="O Termo de Uso delimita a responsabilidade e direciona como os seus clientes devem utilizar o seu produto e, segundo a Lei Nº 12.965/2014, deve conter regras de conduta para utilização da plataforma, eventuais proibições, condições de acesso, proteção da propriedade intelectual do negócio e até mesmo as responsabilidades de cada um que utiliza. Trata-se especificamente de um contrato de adesão que irá nortear o usuário principalmente acerca das regras para utilização do serviço, sobre como se dará a relação entre ele junto ao site ou aplicativo, a fim de evitar discussões e mal entendidos acerca de direitos e deveres de quem os utilizam. Nele o prestador dos serviços também delimita as situações em que será responsabilizado e em quais situações não poderá ser responsabilizado, resguardando-se de quaisquer riscos jurídicos e protegendo os direitos da empresa e dos usuários, de modo que não haja nenhuma quebra de expectativa decorrente da prestação dos serviços ou venda do produto."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

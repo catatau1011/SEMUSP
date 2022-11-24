@@ -37,13 +37,15 @@ public class MainActivity extends IntroActivity {
     private FirebaseAuth autenticacao;
 
     // Base url RestAPI
+    // https://mockapi.io/docs
     private String BASE_URL = "https://637fab2b8efcfcedacf4b096.mockapi.io/api/v1/";
 
     public MainActivity() throws IOException {
     }
 
-
+//
 //    Objeto para decode (desserialização do Json)
+    //https://github.com/ThangSuperMan/Android-app-restfull-api-with-nodejs/blob/master/android-java-app/app/src/main/java/com/sinhvien/myapplication/LoginResult.java
     public static class Ocorrencia {
         public int usuario_id;
         public int tipo_denuncia_id;
@@ -57,6 +59,7 @@ public class MainActivity extends IntroActivity {
     }
 
     // Endpoint Interface com retorno de lista de Objetos (Ocorrencia)
+    //https://github.com/ThangSuperMan/Android-app-restfull-api-with-nodejs/blob/master/android-java-app/app/src/main/java/com/sinhvien/myapplication/RetrofitInterface.java
     public interface Ocorrencias {
         @GET("/ocorrencia")
         Call<List<Ocorrencia>> Ocorrencia();
@@ -90,6 +93,9 @@ public class MainActivity extends IntroActivity {
     protected void onStart() {
         super.onStart();
 
+
+        // https://github.com/ThangSuperMan/Android-app-restfull-api-with-nodejs/blob/master/android-java-app/app/src/main/java/com/sinhvien/myapplication/MainActivity.java
+
         // Instanciando Objeto conector com RestAPI
         Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl(BASE_URL)
@@ -102,6 +108,8 @@ public class MainActivity extends IntroActivity {
 
 
         // Colocando em fila callback (request de chamada para endpoint)
+        //https://github.com/square/retrofit/blob/master/samples/src/main/java/com/example/retrofit/SimpleService.java
+        //https://github.com/ThangSuperMan/Android-app-restfull-api-with-nodejs/blob/master/android-java-app/app/src/main/java/com/sinhvien/myapplication/MainActivity.java
         call.enqueue(new Callback<List<Ocorrencia>>() {
             @Override
             public void onResponse(Call<List<Ocorrencia>> call, Response<List<Ocorrencia>> response) {

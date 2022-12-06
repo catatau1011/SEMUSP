@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
+import com.example.semusp.Activity.CadastroActivity;
+import com.example.semusp.Activity.LoginActivity;
+import com.example.semusp.Activity.SelecaoActivity;
 import com.example.semusp.config.ConfiguraçãoFirebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;

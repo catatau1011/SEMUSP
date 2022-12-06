@@ -1,19 +1,17 @@
-package com.example.semusp;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.semusp.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.Toast;
 
 
+import com.example.semusp.Denucias.CadastrodaDenuncia_Semma;
+import com.example.semusp.R;
 import com.example.semusp.config.ConfiguraçãoFirebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
-import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
 
 public class MainActivity extends IntroActivity {
     private FirebaseAuth autenticacao;
@@ -55,7 +53,13 @@ public class MainActivity extends IntroActivity {
     public void btCadastrar(View v) {
         startActivity(new Intent(this, CadastroActivity.class));
     }
+    public void btConvidado(View v) {
+        startActivity(new Intent(this, CadastrodaDenuncia_Semma.class));
+        Toast.makeText(MainActivity.this,
+                "Realize o cadastro da sua denuncia!\n Convidado",Toast.LENGTH_SHORT).show();
+    }
     //Aqui é onde manda o usuario pra tela principal
+
     public void verificarUsuarioLogado() {
         autenticacao = ConfiguraçãoFirebase.getFirebaseAutenticacao();
         if (autenticacao.getCurrentUser() != null) {

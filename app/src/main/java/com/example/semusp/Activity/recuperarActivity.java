@@ -1,8 +1,9 @@
-package com.example.semusp;
+package com.example.semusp.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -10,10 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.semusp.R;
 import com.example.semusp.config.ConfiguraçãoFirebase;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class recuperarActivity extends AppCompatActivity {
@@ -24,6 +25,7 @@ public class recuperarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recuperar);
+        getSupportActionBar().hide();
 
         emailEditext = findViewById(R.id.editEmail3);
         resetPassowd = findViewById(R.id.resetPassoword);
@@ -33,7 +35,15 @@ public class recuperarActivity extends AppCompatActivity {
         resetPassowd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                resestPassord();
+                String email=emailEditext.getText().toString();
+                if (!email.isEmpty()){
+                  Intent intent = new Intent(recuperarActivity.this,RedefinirSenhaActivity.class);
+                  startActivity(intent);
+                }else {
+                    Toast.makeText(recuperarActivity.this,"Digite um email,para poder recuperar a senha",
+                            Toast.LENGTH_SHORT).show();
+                }
+                //resestPassord();
             }
         });
     }

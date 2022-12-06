@@ -4,6 +4,8 @@
     package="com.example.semusp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -20,34 +22,65 @@
         android:theme="@style/Theme.SEMUSP"
         tools:targetApi="31">
         <activity
-            android:name=".Escolha.FaunaActivity"
+            android:name=".AcompanharOcorrencia.Acompanhar_defesa_civil"
             android:exported="false" />
         <activity
-            android:name=".Escolha.FloraActivity"
+            android:name=".AcompanharOcorrencia.Acompanhar_semma"
             android:exported="false" />
         <activity
-            android:name=".Escolha.AguaActivity"
+            android:name=".Activity.RedefinirSenhaActivity"
             android:exported="false" />
         <activity
-            android:name=".Escolha.FogoActivity"
+            android:name=".informativo.InfromativoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Telas.ListaDefesaCivil"
             android:exported="false" />
         <activity
-            android:name=".Escolha.ArActivity"
+            android:name=".Telas.Denuncia_defesa_civil"
             android:exported="false" />
         <activity
-            android:name=".Escolha.RuidoActivity"
+            android:name=".Denucias.CadastroDenuncia_Defesa_Civil"
             android:exported="false" />
         <activity
-            android:name=".Escolha.SoloActivity"
+            android:name=".Telas.ListaSemma"
             android:exported="false" />
         <activity
-            android:name=".Telas.Denuncia"
+            android:name=".Denucias.CadastrodaDenuncia_Semma"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha_semma.FaunaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha_semma.FloraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha_semma.AguaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha_semma.FogoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha_semma.ArActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha_semma.RuidoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Escolha_semma.SoloActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Telas.Denuncia_Semma"
             android:exported="false" />
         <activity
             android:name=".termodeuso"
             android:exported="false" />
         <activity
-            android:name=".recuperarActivity"
+            android:name=".Activity.recuperarActivity"
             android:exported="false" />
         <activity
             android:name=".Telas.Semma"
@@ -56,10 +89,10 @@
             android:name=".Telas.DefesaCivil"
             android:exported="false" />
         <activity
-            android:name=".SelecaoActivity"
+            android:name=".Activity.SelecaoActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastroActivity"
+            android:name=".Activity.CadastroActivity"
             android:exported="false" />
         <activity
             android:name=".SplaschScreen"
@@ -69,13 +102,17 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Intro" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Activity.LoginActivity"
             android:exported="false" />
     </application>
 

@@ -1,4 +1,4 @@
-package com.example.semusp;
+package com.example.semusp.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.semusp.R;
 import com.example.semusp.config.ConfiguraçãoFirebase;
 import com.example.semusp.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText campoEmail,campoSenha;
-    private Button botaoentrar;
+    private Button botaoentrar,botaoConvidado;
     private Usuario usuario;
     private FirebaseAuth autenticacao;
     private TextView recuperar;
@@ -39,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         campoSenha = findViewById(R.id.editSenha1);
         botaoentrar = findViewById(R.id.btnEntrar);
         //autenticacao = FirebaseAuth.getInstance();
+
         recuperar = findViewById(R.id.recuparar);
         recuperar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,15 +52,19 @@ public class LoginActivity extends AppCompatActivity {
         botaoentrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String textoEmail = campoEmail.getText().toString();
+
+                 String textoEmail = campoEmail.getText().toString();
                 String textoSenha = campoSenha.getText().toString();
 
                 if (!textoEmail.isEmpty()){
                     if (!textoSenha.isEmpty()){
-                        usuario = new Usuario();
+                        startActivity(new Intent(LoginActivity.this,SelecaoActivity.class));
+                        Toast.makeText(LoginActivity.this,
+                                "Login feito com sucesso!\n Aproveite o App",Toast.LENGTH_SHORT).show();
+                        /*usuario = new Usuario();
                         usuario.setEmail(textoEmail);
                         usuario.setSenha(textoSenha);
-                        validarLogin();
+                        validarLogin();*/
                     }else{
                         Toast.makeText(LoginActivity.this,
                                 "Digite sua senha",
@@ -105,6 +111,10 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this,SelecaoActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void convidado(View v){
+
     }
 
 }

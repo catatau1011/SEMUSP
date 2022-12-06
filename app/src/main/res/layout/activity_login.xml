@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Activity.LoginActivity">
 
     <ImageView
         android:id="@+id/fundoPorTras2"
@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo2" />
+        app:srcCompat="@drawable/fundo_cinza" />
 
     <ImageView
         android:id="@+id/fundodafrente2"
@@ -25,31 +25,10 @@
         android:layout_marginTop="-50dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo" />
-
-    <ImageView
-        android:id="@+id/elipse2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/elipse" />
-
-    <ImageView
-        android:id="@+id/tartaruga2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/elipse2"
-        app:layout_constraintEnd_toEndOf="@+id/elipse2"
-        app:layout_constraintStart_toStartOf="@+id/elipse2"
-        app:layout_constraintTop_toTopOf="@+id/elipse2"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/fundo_cinza" />
 
     <TextView
         android:id="@+id/textView4"
@@ -67,7 +46,7 @@
 
     <EditText
         android:id="@+id/editEmail1"
-        style="@style/Edit_text"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -85,7 +64,7 @@
 
     <EditText
         android:id="@+id/editSenha1"
-        style="@style/Edit_text"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:textSize="20dp"
@@ -105,9 +84,11 @@
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="@drawable/backgroun_button_verde"
+        android:backgroundTint="@color/cinza"
+        android:padding="10dp"
         android:text="Entrar"
         android:textSize="20dp"
+        app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

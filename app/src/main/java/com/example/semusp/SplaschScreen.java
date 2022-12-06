@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.window.SplashScreen;
+
+import com.example.semusp.Activity.MainActivity;
 
 public class SplaschScreen extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class SplaschScreen extends AppCompatActivity {
             public void run(){
                 try {
                     sleep(3000);
-                    startActivity(new Intent(SplaschScreen.this,MainActivity.class));
+                    startActivity(new Intent(SplaschScreen.this, MainActivity.class));
                     finish();
                 }catch (Exception e){
 

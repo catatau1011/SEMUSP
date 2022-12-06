@@ -5,42 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".SelecaoActivity">
+    tools:context=".Activity.SelecaoActivity">
 
-    <ImageView
-        android:id="@+id/fundoPorTras6"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="-50dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo2" />
-
-    <ImageView
-        android:id="@+id/fundodafrente6"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo" />
-
-    <ImageView
-        android:id="@+id/tartaruga6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageButton"
@@ -48,9 +14,10 @@
         android:layout_height="220dp"
         android:layout_marginTop="40dp"
         android:onClick="selecaoDfCicil"
-        android:src="@drawable/defcivil"
+        android:src="@drawable/defesa_cillllcil"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -111,11 +78,32 @@
         android:layout_width="220dp"
         android:layout_height="220dp"
         android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
         android:onClick="selecaoSemma"
         android:src="@drawable/semma"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:onClick="informativo"
+        android:padding="15dp"
+        android:text="Informativo"
+        android:textColor="@color/verde"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

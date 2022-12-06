@@ -8,22 +8,49 @@
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/backgroun_button.xml" value="0.1745" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/backgroun_button_verde.xml" value="0.177" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/background.xml" value="0.1745" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/background_cinza.xml" value="0.156" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/containercomponets.xml" value="0.177" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/divider.xml" value="0.156" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/edit_text.xml" value="0.177" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.1565" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/ic_coment.xml" value="0.1565" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/ic_like_svg.xml" value="0.1565" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/ic_share.xml" value="0.1565" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/drawable/senhaolho.xml" value="0.177" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout-w1240dp/feed_item.xml" value="0.1875" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_acompanhar_defesa_civil.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_acompanhar_semma.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_agua.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_agua2.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_ar.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_cadastro.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_cadastro_defesa_civil.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_cadastroda_denuncia.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_defesa_civil.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_defesacivilss.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_denuncia.xml" value="0.264" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_denuncia_defesa_civil.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_fauna.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_flora.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_fogo.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_infromativo.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_lista_defesa_civil.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_lista_semma.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_recuperar.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_redefinir_senha.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_ruido.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_selecao.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_semma.xml" value="0.264" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_solo.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_splasch_screen.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_termode_uso.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_termodeuso.xml" value="0.2359375" />
-        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/intro_1.xml" value="0.19844357976653695" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/activity_vendaval.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/adapter_lista.xml" value="0.25" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/feed_item.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/intro_1.xml" value="0.264" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/intro_2.xml" value="0.25" />
         <entry key="..\:/Users/55939/AndroidStudioProjects/SEMUSP/app/src/main/res/layout/intro_cadastro.xml" value="0.20901639344262296" />
       </map>

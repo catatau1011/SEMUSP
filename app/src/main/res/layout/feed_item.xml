@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="ExtraText"
+    >
+
+    <ImageView
+        android:id="@+id/image_view_user"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/image_view_more"
+        app:layout_constraintStart_toEndOf="@id/image_view_user"
+        app:layout_constraintTop_toTopOf="@id/image_view_user"
+        tools:text="User A" />
+
+    <ImageView
+        android:id="@+id/image_view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/Todo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_username"
+        app:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_user"
+        app:layout_constraintStart_toEndOf="@id/image_view_user"
+        tools:text="2 minutos" />
+
+    <ImageView
+        android:id="@+id/image_view_post"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/Todo3"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_content"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <LinearLayout
+        android:id="@+id/post_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/image_view_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#999997"
+
+        >
+
+        <TextView
+            android:id="@+id/tex_view_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            tools:text="blog.google.com"/>
+        <TextView
+            android:id="@+id/tex_view_post_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:text="Poison ivy grew through the fence they said was impenetrable. He had a hidden stash underneath the floorboards in the back room of the house.
+
+Ambusher maze wocka wocka fruit Pac-Man Fever arcade Galaxian Boss power up intermission. She was disgusted he couldn’t tell the difference between lemonade and limeade. He hated that he loved what she hated about hate."/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_like"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/ic_like_svg"
+        android:text="@string/like"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/buttom_coment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_container" /><![CDATA[
+
+
+
+
+    />
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/buttom_coment"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/ic_coment"
+        android:drawablePadding="8dp"
+        android:text="@string/coment"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/buttom_share"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/button_like"
+        app:layout_constraintTop_toBottomOf="@id/post_container"
+        />
+
+    <Button
+        android:id="@+id/buttom_share"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:drawableBottom="@drawable/ic_share"
+        android:text="@string/share"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/buttom_coment"
+        app:layout_constraintTop_toBottomOf="@id/post_container"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_view_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/image_view_more"
+        app:layout_constraintStart_toStartOf="@id/image_view_user"
+        app:layout_constraintTop_toBottomOf="@id/text_view_time"
+        tools:text="He found his art never progressed when he literally used his sweat and tears. The old apple revels in its authority. Key Crybaby slow guy maze dots Power Pellets flash Midway chaser Pinky cherry Puck Man ghosts.
+
+The beauty of the sunset was obscured by the industrial cranes. The old apple revels in its authority. Poison ivy grew through the fence they said was impenetrable. Orange fickle blue guy maze chase." />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

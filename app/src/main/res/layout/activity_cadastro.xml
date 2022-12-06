@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroActivity">
+    tools:context=".Activity.CadastroActivity">
 
     <ImageView
         android:id="@+id/fundoPorTras3"
@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo2" />
+        app:srcCompat="@drawable/fundo_cinza" />
 
     <ImageView
         android:id="@+id/fundodafrente3"
@@ -27,32 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo" />
+        app:srcCompat="@drawable/fundo_cinza" />
 
-    <ImageView
-        android:id="@+id/elipse3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/editNome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/elipse" />
-
-    <ImageView
-        android:id="@+id/tartaruga3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/elipse2"
-        app:layout_constraintEnd_toEndOf="@+id/elipse3"
-        app:layout_constraintStart_toStartOf="@+id/elipse2"
-        app:layout_constraintTop_toTopOf="@+id/elipse3"
-        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView6"
@@ -60,18 +36,18 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:text="Crie sua conta"
-        android:textColor="@color/cinza"
+        android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editNome"
+        app:layout_constraintBottom_toTopOf="@+id/editAutor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
-        android:id="@+id/editNome"
-        style="@style/Edit_text"
+        android:id="@+id/editAutor"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -87,7 +63,7 @@
 
     <EditText
         android:id="@+id/editEmail"
-        style="@style/Edit_text"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -99,11 +75,11 @@
         app:layout_constraintBottom_toTopOf="@+id/editTelefone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+        app:layout_constraintTop_toBottomOf="@+id/editAutor" />
 
     <EditText
         android:id="@+id/editTelefone"
-        style="@style/Edit_text"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -119,7 +95,7 @@
 
     <EditText
         android:id="@+id/editEndereco"
-        style="@style/Edit_text"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -135,7 +111,7 @@
 
     <EditText
         android:id="@+id/editCpf"
-        style="@style/Edit_text"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -151,7 +127,7 @@
 
     <EditText
         android:id="@+id/editSenha"
-        style="@style/Edit_text"
+        style="@style/Edit_Text"
         android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -171,8 +147,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/backgroun_button_verde"
+        android:backgroundTint="@color/cinza"
+
+        android:padding="10dp"
         android:text="Cadastrar"
+        app:cornerRadius="50dp"
         app:layout_constraintBottom_toTopOf="@+id/txtTermo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -188,42 +167,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCadastrar" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageButton3"
-        android:layout_width="60sp"
-        android:layout_height="60sp"
-        android:layout_marginEnd="5dp"
-        android:src="@drawable/img"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCadastrar" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageButton4"
-        android:layout_width="60sp"
-        android:layout_height="60sp"
-        android:layout_marginEnd="5dp"
-        android:src="@drawable/facebbok"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCadastrar" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageButton5"
-        android:layout_width="60sp"
-        android:layout_height="60sp"
-        android:src="@drawable/instagram"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
         app:layout_constraintTop_toBottomOf="@+id/buttonCadastrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

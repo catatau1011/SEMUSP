@@ -1,4 +1,4 @@
-package com.example.semusp;
+package com.example.semusp.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,8 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.semusp.Denucias.CadastrodaDenuncia_Semma;
+import com.example.semusp.R;
 import com.example.semusp.config.ConfiguraçãoFirebase;
 import com.example.semusp.model.Usuario;
+import com.example.semusp.termodeuso;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -25,7 +28,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class CadastroActivity extends AppCompatActivity {
 
     private EditText campoNome,campoEmail,campoTelefone,campoEndereco,campoCpf,campoSenha;
-    private Button buttonCadastrar;
+    private Button buttonCadastrar,buttonConvidado;
     private FirebaseAuth autenticacao;
     private Usuario usuario;
     FirebaseDatabase database;
@@ -35,13 +38,15 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
         getSupportActionBar().hide();
-        campoNome = findViewById(R.id.editNome);
+        campoNome = findViewById(R.id.editAutor);
         campoEmail = findViewById(R.id.editEmail);
         campoTelefone = findViewById(R.id.editTelefone);
         campoEndereco = findViewById(R.id.editEndereco);
         campoCpf = findViewById(R.id.editCpf);
         campoSenha = findViewById(R.id.editSenha);
         buttonCadastrar = findViewById(R.id.buttonCadastrar);
+
+
         buttonCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,14 +65,18 @@ public class CadastroActivity extends AppCompatActivity {
                             if (!textoEndereco.isEmpty()){
                                 if (!textoCpf.isEmpty()){
                                     if (!textoSenha.isEmpty()){
-                                            usuario = new Usuario();
+                                        startActivity(new Intent(CadastroActivity.this,LoginActivity.class));
+                                        Toast.makeText(CadastroActivity.this,
+                                                "Cadastro feito Com sucesso!",
+                                                Toast.LENGTH_SHORT).show();
+                                            /*usuario = new Usuario();
                                             usuario.setNome(textoNome);
                                             usuario.setEmail(textoEmail);
                                             usuario.setTelefone(textoTelefone);
                                             usuario.setEndereco(textoEndereco);
                                             usuario.setCPF(textoCpf);
                                             usuario.setSenha(textoSenha);
-                                            cadastrarUsuario();
+                                            cadastrarUsuario();*/
                                     }else{
                                         Toast.makeText(CadastroActivity.this,
                                                 "Preencha sua senha",
@@ -153,7 +162,7 @@ public class CadastroActivity extends AppCompatActivity {
         });
     }
     public void termodeuso(View v){
-        Intent intent = new Intent(CadastroActivity.this,termodeuso.class);
+        Intent intent = new Intent(CadastroActivity.this, termodeuso.class);
         startActivity(intent);
     }
     public void abrirOpcoes(){
@@ -161,5 +170,7 @@ public class CadastroActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+
 
 }

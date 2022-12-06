@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Escolha.SoloActivity">
+    android:background="@color/verde"
+    tools:context=".Escolha_semma.SoloActivity">
 
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/imageView19"
+        app:srcCompat="@drawable/elipse" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/semma" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/containercomponets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroun_button_verde"
+        android:onClick="Aterro"
+        android:text="Aterro Sanitário ou Lixão"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btresiduos5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view9" />
+
+    <Button
+        android:id="@+id/btresiduos5"
+        android:layout_width="392dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/backgroun_button_verde"
+        android:onClick="Descarte"
+        android:text="Desgastes irregular de Entulho"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo2" />
+        app:srcCompat="@drawable/fundo_cinza" />
 
     <ImageView
         android:id="@+id/fundodafrente4"
@@ -30,31 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo" />
-
-    <ImageView
-        android:id="@+id/elipse4"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/elipse" />
-
-    <ImageView
-        android:id="@+id/tartaruga4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/elipse4"
-        app:layout_constraintEnd_toEndOf="@+id/elipse4"
-        app:layout_constraintHorizontal_bias="0.458"
-        app:layout_constraintStart_toStartOf="@+id/elipse4"
-        app:layout_constraintTop_toTopOf="@+id/elipse4"
-        app:srcCompat="@drawable/logo" />
-
+        app:srcCompat="@drawable/fundo_cinza" />
 
 
     <com.airbnb.lottie.LottieAnimationView
